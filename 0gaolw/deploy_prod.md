@@ -120,3 +120,26 @@ docker-compose --profile demo ps -a
 - 建议首次启动后 稍等 1-2 分钟 ，让所有容器初始化完毕。
 - 可以通过 docker ps 查看容器状态。
 - 如果访问不了，检查服务器防火墙是否开放 80 端口。
+
+## 六、日常维护
+### 6.1 容器启停
+- 启动所有容器（重建）
+    ```code
+    sudo docker-compose -f docker-compose-mysql.yml --profile all up -d
+    ```
+- 停止所有容器（销毁）
+    ```code
+    sudo docker-compose -f docker-compose-mysql.yml --profile all down
+    ```
+- 启动某个容器（不重建）
+    ```code
+    sudo docker-compose -f docker-compose-mysql.yml --profile all up -d nginx
+    ```
+- 停止某个容器（不销毁）
+    ```code
+    sudo docker-compose -f docker-compose-mysql.yml --profile all down nginx
+    ```
+- 重启某个容器（不销毁）
+    ```code
+    sudo docker-compose -f docker-compose-mysql.yml --profile all restart nginx
+    ```
