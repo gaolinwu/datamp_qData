@@ -1,7 +1,14 @@
 # 定制化修改，版本更新说明
+- author: gaolinwu
+- branch: gaolw/v1.6.0-ys
+
+
+## [26.08.09]
 ```code
-    author: gaolinwu
-    branch: gaolw/v1.6.0-ys
+1.修改首页广告
+    文件位置：qdata-ui\src\views\sys\login.vue
+    修改：将相关div直接删掉
+        
 ```
 ## [26.08.08]
 ```code
