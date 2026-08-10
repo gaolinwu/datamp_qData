@@ -47,7 +47,9 @@ const whiteList = ["/login", "/register", "/sso/login", "/sso",];
 const watermarkText = computed(() => {
   if (localStorage.getItem("username")) {
     if (route.path != "/login" && route.path != "/sso/login") {
-      return localStorage.getItem("username") || "Default Watermark"; //Watermark assignment is required and does not need to be empty.
+      //return localStorage.getItem("username") || "Default Watermark"; //Watermark assignment is required and does not need to be empty.
+      //去除水印
+      return "";
     } else {
       return "";
     }
