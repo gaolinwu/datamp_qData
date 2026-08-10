@@ -210,5 +210,46 @@ mvn clean package
 
 
 
-## 其他
+## 六、本地调试日常操作
+### 6.1 前端在本地启动，连接后端远程服务
+比如：前端以npm run dev启动，监听在81端口，后端qdata-server启动在远端192.168.203.221:18080端口，如何配置前端连接后端服务？
+（1）在前端项目下，修改.env.development文件，修改以下内容：
+```code
+    # VITE_APP_WEBSOCKET_API = 'ws://127.0.0.1:8080'
+    VITE_APP_WEBSOCKET_API = 'ws://192.168.203.221:18080'
+```
+（2）在前端项目下，修改vite.config.js文件，添加以下内容：
+```code
+    server: {
+    port: 81,
+    host: true,
+    open: true,
+    proxy: {
+        "/dev-api": {
+        // target: "http://localhost:18080",   // ← 8080 改为 18080
+        target: "http://192.168.203.221:18080",
+        changeOrigin: true,
+        rewrite: (p) => p.replace(/^\/dev-api/, ""),
+        },
+        "/dev-ai": {
+        target: "http://localhost:8087",   // AI 服务端口，不用改
+        changeOrigin: true,
+        rewrite: (p) => p.replace(/^\/dev-ai/, ""),
+        },
+        "/jmreport": {
+        // target: "http://localhost:18080",  // ← 8080 改为 18080
+        target: "http://192.168.203.221:18080",
+        changeOrigin: true,
+        },
+        "/v3/api-docs": {
+        // target: "http://localhost:18080",  // ← 8080 改为 18080
+        target: "http://192.168.203.221:18080",
+        changeOrigin: true,
+        rewrite: (p) => p.replace("", ""),
+        },
+    },
+    },
+```
+（3）在前端项目下，启动npm run dev，即可连接后端服务。
 
+### 6.2 xxxx
