@@ -49,6 +49,40 @@
     - 位置：D:\Install\node-v24.13.1-win-x64
 
 ## 四、前端开发调试
+### 4.1 在前端项目根目录验证下基础环境
+```
+cd qdata-ui
+
+node -v
+
+输出如下为正常：
+v24.13.1
+```
+### 4.2 安装前端依赖
+```
+npm install
+
+（1）输出如下信息，且没有错误提示为正常：
+    added 874 packages, and audited 875 packages in 3m
+（2）在前端项目根目录下出现 node_modules 目录，说明依赖安装成功
+    node_modules
+```
+### 4.3 编译前端项目
+```
+npm run build:prod
+
+（1）输出如下信息，且没有错误提示为正常：
+    done in 10s
+（2）在前端项目根目录下出现 dist 目录，说明项目编译成功
+    dist
+```
+### 4.4 本地启动前端项目
+```
+npm run dev
+
+自动打开浏览器，访问 http://localhost:81 正常，说明前端项目启动成功
+```
+
 
 
 ## 五、后端开发调试
