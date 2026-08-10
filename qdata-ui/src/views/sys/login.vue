@@ -111,93 +111,9 @@
                 </div>
             </div>
             <div>
-                <div class="description">
-                    <div class="contact" style="float: left">
-                        <img src="@/assets/images/system/login/form-phone.png" />
-                        <div>
-                            <p>{{ td('login.info.phoneContact') }}</p>
-                            <p>
-                                {{
-                                    contentDetail && contentDetail.contactNumber
-                                        ? contentDetail.contactNumber
-                                        : '400-660-8208'
-                                }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact" style="margin-left: 24px">
-                        <img src="@/assets/images/system/login/form-email.png" />
-                        <div>
-                            <p>{{ td('login.info.emailContact') }}</p>
-                            <p>
-                                {{
-                                    contentDetail && contentDetail.email
-                                        ? contentDetail.email
-                                        : 'sales@qiantong.tech'
-                                }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="chrome-wrap">
-                    <img src="@/assets/images/system/login/img-goge-icon.png" style="height: 20px" />
-                    <span style="color: #888; font-size: 12px; line-height: 0; margin-left: 10px">{{ td('login.info.chromeHint') }}</span>
-                    <span style="color: #ee2223; font-size: 12px; line-height: 0">Chrome</span>
-                    <span style="color: #888; font-size: 12px; line-height: 0">{{ td('login.info.chromeHint2') }}</span>
-                    <a href="https://www.google.cn/chrome/" target="_blank">
-                        <div style="
-                                margin-left: 15px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                            ">
-                            <img id="window_img" src="@/assets/images/system/login/icon-window.svg"
-                                style="height: 25px" />
-                            <span style="
-                                    color: #888;
-                                    font-size: 12px;
-                                    line-height: 0;
-                                    margin-top: 7px;
-                                ">Window</span>
-                        </div>
-                    </a>
-                    <a href="https://www.google.cn/chrome/" target="_blank">
-                        <div style="
-                                margin-left: 15px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                            ">
-                            <img id="mac_img" src="@/assets/images/system/login/icon-mac.svg" style="height: 25px" />
-                            <span style="
-                                    color: #888;
-                                    font-size: 12px;
-                                    line-height: 0;
-                                    margin-top: 7px;
-                                ">Mac</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="bottom-info">
-                    <div class="copy-right" style="cursor: pointer;">
-                        <a href="https://qiantong.tech/" target="_blank">
-                            Copyright© {{ new Date().getFullYear() }}
-                            <span style="color: #2666fb">{{ td('login.info.companyName') }}</span>
-                            {{ td('login.info.copyrightOwner') }}
-                        </a>
-                    </div>
 
-                    <div class="record" @click="goKtPage()">
-                        <img src="https://www.asktempo.com/statics/images/an.png" alt="" />
-                        <!--            Su ICP No. 2022008519-1-->
-                        &nbsp;&nbsp;
-                        {{
-                            contentDetail && contentDetail.recordNumber
-                                ? contentDetail.recordNumber
-                                : '苏ICP备2022008519号-3'
-                        }}
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </div>
