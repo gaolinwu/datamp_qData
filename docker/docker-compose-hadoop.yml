@@ -54,8 +54,8 @@ services:
     user: "1000:1000"
     networks:
       - qdatanet
-#    volumes:
-#      - ./hadoop/data:/data/dfs # Mount data storage
+    volumes:
+      - ./hadoop/data:/data/dfs # Mount data storage
 
   resourcemanager:
     image: ${QDATA_HUB}/hadoop:3.3.6

@@ -3,10 +3,33 @@
     author: gaolinwu
     branch: gaolw/v1.6.0-ys
 ```
+## [26.08.08]
+```code
+1.修改为持久化（mysql）
+    文件位置：docker\docker-compose-base-mysql.yml
+    （1）mysql持久化
+    修改：
+        volumes:
+          - ./database/mysql/data:/var/lib/mysql # Mount database storage
+    （2）redis持久化
+    修改：
+        volumes:
+          - ./redis/data:/data # Mount data storage
+    （3）mongodb持久化
+    修改：
+        volumes:
+          - ./database/mongoDB:/data/db
+    （4）hadoop持久化
+    修改：
+        volumes:
+          - ./hadoop/data:/data/dfs # Mount data storage
+```
+
 ## [26.08.05]
 ```code
 1.去除水印
-    修改qdata-ui/src/App.vue文件，将watermarkText的return ""  //去除水印添加到else中，返回空字符串，即可去除水印
+    文件位置：qdata-ui/src/App.vue
+    修改：注释掉if中内容，将watermarkText的return ""  
 2.修改登录页logo和背景图
     文件位置：qdata-ui\src\assets\images\system\login
     logo-qdata.png
