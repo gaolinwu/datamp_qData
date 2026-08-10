@@ -2,6 +2,7 @@
 const QDATA_COMMUNITY_URL = 'https://community.qdata.tech';
 
 export default {
+  /**
   index: {
     title: '重要提醒：本系统为演示站点，<u>每日凌晨 02:30 清除所有用户数据</u>，以保障系统整洁与稳定运行。',
     content: `如需体验完整功能，请下载开源代码自行部署。如需 <u>开源版品牌授权</u> 或 <u>咨询商业版</u>，请点击查看详情： 👉  <a href="${QDATA_COMMUNITY_URL}/business/policy.html" target="_blank">了解授权详情</a>`,
@@ -10,6 +11,7 @@ export default {
     type: 'danger',
     version: '1.0'
   },
+   */
   attAuditRule: {
     title: '稽查规则 —— 是保障数据质量的核心手段，基于 <u>标准数据元</u> 的定义（如字段类型、值域等）制定具体的检查逻辑，用于评估数据的质量表现。',
     content: `这些规则配置后，可被绑定到 <u>数据质量任务</u> 中，通过定时调度执行，自动扫描并识别数据异常，形成质量报告，支撑数据问题的发现与治理闭环。 <a href="${QDATA_COMMUNITY_URL}/docs/user/basic-management/rule-management/audit-rules.html" target="_blank">查看帮助文档</a>`,

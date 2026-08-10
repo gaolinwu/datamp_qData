@@ -17,7 +17,7 @@
 -->
 
 <template>
-    <div v-if="visible" :class="['guide-tip', config.type]">
+    <div v-if="visible && config.title" :class="['guide-tip', config.type]">
         <div class="tip-header">
             <span class="tip-title" ref="titleRef">
                 <svg-icon v-if="config.type === 'warning' || config.type === 'danger'" iconClass="warning" class="tip-icon" />
