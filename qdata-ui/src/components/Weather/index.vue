@@ -78,10 +78,10 @@
 
     const fallbackWeather = {
         location: {
-            name: '南京'
+            name: '西安'
         },
         now: {
-            text: '晴',
+            text: '阴',
             temperature: '31'
         },
         daily: [
@@ -177,7 +177,7 @@
 
     async function getData() {
         const baseUrl = 'https://api.seniverse.com/v3/weather';
-        const baseParams = 'key=SjyiLD_odjCGOsHoF&location=南京&language=zh-Hans&unit=c';
+        const baseParams = 'key=SjyiLD_odjCGOsHoF&location=西安&language=zh-Hans&unit=c';
 
         try {
             const [nowRes, dailyRes] = await Promise.all([
