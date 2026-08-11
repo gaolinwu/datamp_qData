@@ -154,7 +154,7 @@ export default {
     selectRecord: 'Please select data to delete'
   },
   html: {
-    appTitle: 'qData Open Source Data Platform'
+    appTitle: 'Data Middle Platform - Integrated Data Foundation'
   },
   // Rules
   rules: {
