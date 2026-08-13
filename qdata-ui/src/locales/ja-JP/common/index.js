@@ -154,7 +154,7 @@ export default {
     selectRecord: '削除するデータを選択してください'
   },
   html: {
-    appTitle: 'データプラットフォーム - データ統合基盤'
+    appTitle: 'データ統合基盤'
   },
   // ルール
   rules: {

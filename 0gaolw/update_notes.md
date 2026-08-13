@@ -2,6 +2,19 @@
 - author: gaolinwu
 - branch: gaolw/v1.6.0-ys
 
+## [26.08.13]
+```code
+1.修改浏览器tips名称为“一体化数据底座”
+    文件位置：qdata-ui\src\locales\zh-CN\common\index.js
+    修改：将appTitle修改为"一体化数据底座"
+```
+
+## [26.08.09]
+```code
+1.修改登录后首页天气显示
+    文件位置：qdata-ui\src\components\Weather\index.vue
+    修改：将天气组件的默认天气修改为西安的天气
+```
 
 ## [26.08.09]
 ```code

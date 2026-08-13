@@ -154,7 +154,7 @@ export default {
     selectRecord: 'Please select data to delete'
   },
   html: {
-    appTitle: 'Data Middle Platform - Integrated Data Foundation'
+    appTitle: 'Integrated Data Foundation'
   },
   // Rules
   rules: {

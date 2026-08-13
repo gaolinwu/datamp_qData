@@ -148,7 +148,7 @@ export default {
     selectRecord: '请选择要删除的数据'
   },
   html: {
-    appTitle: '数据中台-数据一体化底座'
+    appTitle: '一体化数据底座'
   },
   // show
   display: {
